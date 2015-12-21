@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.gisinc.androidexamples.myapplication.MyActivity">
+    <com.puma.view.AliPayTextView
+        android:id="@+id/tv_money"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:textSize="36sp"
+        android:textColor="@color/darkBlue"
+        />
+    <com.puma.view.SettingsToggle
+        xmlns:widget="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/settings1"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        widget:prefName="useMyLocation"
+        widget:text="Use My Location"
+        android:layout_below="@id/tv_money"
+        android:background="@color/darkGray"/>
+
+
+</RelativeLayout>
