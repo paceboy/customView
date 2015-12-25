@@ -17,7 +17,8 @@ import android.widget.TextView;
  */
 public class AliPayTextView extends TextView {
     private static final String TAG = "AliPayTextView";
-    private final float BASEVALUE = 5000;
+    private static final float BASEVALUE = 5000;
+    private static int s_aaa;
     private FormateContentStrategy<Float> formateContentStrategy;
     private ObjectAnimator oa;
     private float finalValue; // 最终的text值
